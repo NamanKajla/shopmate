@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "type": "web",
+      "name": "shopmate-backend",
+      "runtime": "node",
+      "buildCommand": "npm install",
+      "startCommand": "npm start",
+      "envVars": [
+        {
+          "key": "MONGO_URI",
+          "scope": "build"
+        },
+        {
+          "key": "JWT_SECRET",
+          "scope": "build"
+        }
+      ]
+    }
+  ]
+}
